@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="HER ERA. — your personal black-and-white life tracker.">
+  <title>HER ERA. — personal tracker</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" data-page="home">
+        <span class="brand-mark">H<span>★</span></span>
+        <span class="brand-copy">HER ERA.<small>PERSONAL TRACKER / 001</small></span>
+      </a>
+      <div class="sidebar-rule"></div>
+      <p class="nav-label">YOUR UNIVERSE</p>
+      <nav class="nav-menu">
+        <button class="nav-item active" data-page="home"><span>✳</span> Overview</button>
+        <button class="nav-item" data-page="mood"><span>♫</span> Music & mood</button>
+        <button class="nav-item" data-page="calendar"><span>▦</span> Important days</button>
+        <button class="nav-item" data-page="health"><span>✦</span> Health challenge</button>
+        <button class="nav-item" data-page="worship"><span>☾</span> Ibadah tracker</button>
+        <button class="nav-item" data-page="english"><span>Ａ</span> English lab</button>
+        <button class="nav-item" data-page="books"><span>▤</span> Reading log</button>
+        <button class="nav-item" data-page="journal"><span>✎</span> Daily journal</button>
+        <button class="nav-item" data-page="academic"><span>＋</span> Academic era</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-sticker">NOT PERFECT.<br>JUST IN PROGRESS. <span>✳</span></div>
+        <p class="side-caption">A life you're proud to live.</p>
+        <button class="button side-button" id="export-data">↗ Export backup</button>
+        <label class="button side-button file-button">↙ Import backup<input type="file" id="import-data" accept="application/json"></label>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow" id="today-label">PERSONAL ARCHIVE / TODAY</p>
+          <h1 id="page-title">Your era starts here.</h1>
+        </div>
+        <div class="topbar-right"><span class="status-dot"></span><span>LOCAL MODE</span><span class="top-star">✳</span></div>
+      </header>
+      <section id="page-content" aria-live="polite"></section>
+      <footer class="main-footer"><span>HER ERA. / PERSONAL ARCHIVE</span><span>MADE BY YOU, FOR YOU. ★</span></footer>
+    </main>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Main navigation">
+    <button class="mobile-nav-item active" data-page="home"><span>✳</span>Home</button>
+    <button class="mobile-nav-item" data-page="health"><span>✦</span>Health</button>
+    <button class="mobile-nav-item" data-page="english"><span>Ａ</span>English</button>
+    <button class="mobile-nav-item" data-page="academic"><span>＋</span>Study</button>
+    <button class="mobile-nav-item" data-page="journal"><span>✎</span>Journal</button>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "id": "./",
+  "name": "HER ERA. — Personal Tracker",
+  "short_name": "HER ERA.",
+  "description": "Black-and-white personal life tracker and journal.",
+  "lang": "id",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f3ef",
+  "theme_color": "#111111",
+  "orientation": "any"
+}
